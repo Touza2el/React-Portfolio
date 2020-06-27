@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+// Variables
+$black-color: #444;
+$secondary-color: #ff6663;
+
+// Navbar Component
+nav {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+}
+.brand-name {
+  a {
+    color: $black-color;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+}
+.nav-list {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  li {
+    margin-right: 30px;
+    a {
+      color: $black-color;
+      text-transform: capitalize;
+      text-decoration: none;
+      transition: color 0.4s ease;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
