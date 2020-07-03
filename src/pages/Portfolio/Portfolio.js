@@ -1,9 +1,11 @@
 import React from "react";
 
+import "./style.scss";
+
 function Portfolio() {
   return (
     <div>
-      <h3>Portfolio Component</h3>
+      <h2>Portfolio Component</h2>
     </div>
   );
 }

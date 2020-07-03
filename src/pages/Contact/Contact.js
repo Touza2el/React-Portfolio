@@ -1,9 +1,11 @@
 import React from "react";
 
+import "./style.scss";
+
 function Contact() {
   return (
     <div>
-      <h3>Contact Component</h3>
+      <h2>Contact Component</h2>
     </div>
   );
 }

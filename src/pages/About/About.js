@@ -1,9 +1,10 @@
 import React from "react";
+import "./style.scss";
 
 function About() {
   return (
     <div>
-      <h3>About Component</h3>
+      <h2>About Component</h2>
     </div>
   );
 }

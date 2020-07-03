@@ -1,9 +1,11 @@
 import React from "react";
 
+import "./style.scss";
+
 function Blog() {
   return (
     <div>
-      <h3>Blog Component</h3>
+      <h2>Blog Component</h2>
     </div>
   );
 }
