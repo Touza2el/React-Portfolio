@@ -1,4 +1,6 @@
-.header-component {
+import styled from "styled-components";
+
+export const HeaderComponent = styled.div`
   height: 70px;
   border: 1px solid rgba(238, 238, 238, 0.8);
   .container {
@@ -74,10 +76,8 @@
       }
     }
   }
-}
 
-@media screen and (max-width: 900px) {
-  .header-component {
+  @media screen and (max-width: 900px) {
     .container {
       .header-content {
         .nav-bar {
@@ -85,8 +85,9 @@
         }
         .mobile-menu {
           display: block;
+          color: ${({ open }) => (open ? "red" : "#146580")};
         }
       }
     }
   }
-}
+`;

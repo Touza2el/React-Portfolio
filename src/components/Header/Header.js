@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style.scss";
+import { HeaderComponent } from "./style";
 
 function Header() {
   return (
-    <header className="header-component">
+    <HeaderComponent>
       <div className="container">
         <div className="header-content">
           <div className="brand-name">
@@ -43,7 +43,7 @@ function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </HeaderComponent>
   );
 }
 
