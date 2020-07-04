@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./style.scss";
 
 function Footer() {
@@ -12,9 +12,15 @@ function Footer() {
           </div>
           <div className="footer-content-right">
             <ul>
-              <li>| privacy policy</li>
-              <li>| terms & conditions</li>
-              <li>| contact us</li>
+              <li>
+                <Link to="/">| privacy policy</Link>
+              </li>
+              <li>
+                <Link to="/">| terms & conditions</Link>
+              </li>
+              <li>
+                <Link to="/contact">| contact us</Link>
+              </li>
             </ul>
           </div>
         </div>

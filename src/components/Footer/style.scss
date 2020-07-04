@@ -20,13 +20,15 @@
         ul {
           display: flex;
           li {
-            margin-left: 10px;
-            color: gray;
-            text-transform: capitalize;
-            cursor: pointer;
-            transition: color 0.5s ease;
-            &:hover {
-              color: #c8c8c8;
+            a {
+              margin-left: 10px;
+              color: gray;
+              text-transform: capitalize;
+              cursor: pointer;
+              transition: color 0.5s ease;
+              &:hover {
+                color: #c8c8c8;
+              }
             }
           }
         }

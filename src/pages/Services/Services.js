@@ -1,11 +1,14 @@
 import React from "react";
 
 import "./style.scss";
+import PageHeader from "./../../components/PageHeader/PageHeader";
 
 function Services() {
   return (
-    <div>
-      <h2>Services Component</h2>
+    <div className="services-page">
+      <div className="services-page-content">
+        <PageHeader title="our services" subTitle="-- what we offer --" />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.page-header {
+  height: 215px;
+  background-color: #146580;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .page-header-content {
+    h2 {
+      color: #fff;
+      font-size: 32px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    p {
+      margin-top: 5px;
+      color: #bdbdbd;
+      font-family: "roboto slab";
+      font-size: 18px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+  }
+}
