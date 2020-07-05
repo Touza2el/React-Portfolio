@@ -12,7 +12,8 @@ $black-color: #444;
 
 // End Variables
 // Start General Style
-.body {
+body {
+  overflow-x: hidden;
   color: $black-color;
 }
 .container {

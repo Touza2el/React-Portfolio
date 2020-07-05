@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HeaderComponent } from "./style";
 
 function Header() {
+  const [open, setOpen] = useState(false);
   return (
     <HeaderComponent>
       <div className="container">
@@ -10,12 +11,10 @@ function Header() {
           <div className="brand-name">
             <h2>Touza2el.Pro</h2>
           </div>
-          <div className="nav-bar">
+          <div className={open ? "nav-bar active" : "nav-bar"}>
             <ul>
               <li>
-                <Link className="active" to="/">
-                  home
-                </Link>
+                <Link to="/">home</Link>
               </li>
               <li>
                 <Link to="/about">about</Link>
@@ -38,7 +37,7 @@ function Header() {
             <button className="btn login-btn">login</button>
             <button className="btn sign-in-btn">sign in</button>
           </div>
-          <div className="mobile-menu">
+          <div className="mobile-menu" onClick={() => setOpen(!open)}>
             <i className="fas fa-bars"></i>
           </div>
         </div>

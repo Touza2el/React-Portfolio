@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HeaderComponent = styled.div`
   height: 70px;
-  border: 1px solid rgba(238, 238, 238, 0.8);
   .container {
     height: 100%;
     .header-content {
@@ -27,9 +26,6 @@ export const HeaderComponent = styled.div`
               &:hover {
                 color: #ff6663;
               }
-            }
-            a.active {
-              color: #ff6663;
             }
           }
         }
@@ -78,11 +74,39 @@ export const HeaderComponent = styled.div`
   }
 
   @media screen and (max-width: 900px) {
+    position: relative;
     .container {
       .header-content {
         .nav-bar {
-          display: none;
+          width: 50%;
+          height: 89vh;
+          position: absolute;
+          top: 100%;
+          right: -55%;
+          background-color: #146580;
+          transition: 600ms ease all;
+          &.active {
+            right: 0%;
+          }
+          ul {
+            margin-top: 20px;
+            flex-direction: column;
+            li {
+              padding: 0;
+              text-align: center;
+              a {
+                padding: 10px 0;
+                display: block;
+                color: #fff;
+                transition: 600ms ease all;
+                &:hover {
+                  background-color: #0d4253;
+                }
+              }
+            }
+          }
         }
+
         .mobile-menu {
           display: block;
           color: ${({ open }) => (open ? "red" : "#146580")};
