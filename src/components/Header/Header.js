@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HeaderComponent } from "./style";
 
-function Header() {
+function Header(props) {
+  const { onscroll } = props;
   const [open, setOpen] = useState(false);
+
   return (
-    <HeaderComponent>
+    <HeaderComponent className={onscroll ? "fix-header" : ""}>
       <div className="container">
         <div className="header-content">
           <div className="brand-name">
-            <h2>Touza2el.Pro</h2>
+            <h2>
+              <Link to="/">
+                Touza2el.<span>Pro</span>
+              </Link>
+            </h2>
           </div>
           <div className={open ? "nav-bar active" : "nav-bar"}>
             <ul>

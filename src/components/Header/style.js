@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeaderComponent = styled.div`
   height: 70px;
+  background-color: #fff;
   .container {
     height: 100%;
     .header-content {
@@ -11,7 +12,14 @@ export const HeaderComponent = styled.div`
       justify-content: space-between;
       align-items: center;
       .brand-name {
-        color: #444;
+        h2 {
+          a {
+            color: #146580;
+            span {
+              color: #ff6663;
+            }
+          }
+        }
       }
       .nav-bar {
         ul {
@@ -95,7 +103,7 @@ export const HeaderComponent = styled.div`
               padding: 0;
               text-align: center;
               a {
-                padding: 10px 0;
+                padding: 15px 0;
                 display: block;
                 color: #fff;
                 transition: 600ms ease all;

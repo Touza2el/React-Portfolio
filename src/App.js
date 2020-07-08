@@ -14,11 +14,27 @@ import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      onScroll: false,
+    };
+  }
+  componentDidMount = () => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        this.setState({ onScroll: true });
+      } else {
+        this.setState({ onScroll: false });
+      }
+    });
+  };
+
   render() {
     return (
       <Router>
         <div className="App">
-          <Header />
+          <Header onscroll={this.state.onScroll} />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
